@@ -10,9 +10,9 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 
-require("./app/routing/apiRoutes.js")(app);
-require("./app/routing/htmlRoutes.js")(app);
+require(path.join(__dirname, "./app/routing/apiRoutes.js"))(app);
+require(path.join(__dirname, "./app/routing/htmlRoutes.js"))(app);
 
 app.listen(PORT, function(){
-    console.log("Application listeing to PORT: " + PORT);
+    console.log("Friend Finder app listeing to PORT: " + PORT);
 });

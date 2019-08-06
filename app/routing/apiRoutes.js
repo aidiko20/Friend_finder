@@ -39,4 +39,3 @@ req.json(FriendMatch);
 friendsData.push(newFriendData);
 });
 }
-module.exports = apiRoutes;

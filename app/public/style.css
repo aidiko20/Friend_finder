@@ -1,5 +1,5 @@
 .jumbotron{
-    background-image: url(images/coffee.png);
+    background-image: url(/app/public/images/coffee.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
