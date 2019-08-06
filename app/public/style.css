@@ -1,0 +1,23 @@
+.jumbotron{
+    background-image: url(images/coffee.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    margin: 50px;
+    height: 300px;
+}   
+h1{
+    font-style: italic;
+    font-style: bold;
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+p{
+    font-style: italic;
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.btn{
+    background-color: yellow;
+}
