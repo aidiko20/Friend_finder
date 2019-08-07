@@ -5,19 +5,27 @@
     background-position: center;
     padding: 20px;
     margin: 50px;
-    height: 300px;
+    height: 200px;
 }   
 h1{
     font-style: italic;
     font-style: bold;
-    color:rgb(165, 19, 19, 0.3)
+    color: rgb(10, 119, 243);
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 p{
     font-style: italic;
-    color: rgb(165, 19, 19);
+    color: rgb(10, 119, 243);
+    font-size: 30px;
+    font-style:bolder;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 .btn{
-    background-color: rgb(165, 19, 19);
+    background-color:  rgb(10, 119, 243);
+}
+#mytextContainer {
+    padding-bottom: 80px;
+}
+#surveyBody {
+    background-color:  rgb(10, 119, 243);
 }

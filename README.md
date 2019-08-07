@@ -1,4 +1,7 @@
 # Friend_finder
+ Live website:  https://calm-castle-11485.herokuapp.com/
+
+![alt text](images/Screenschotfinder.png "Title Text")
 # How to use the app
 1. Simply click on button take servey
 2. Type your name and add your picture
@@ -59,3 +62,5 @@
    * The modal should display both the name and picture of the closest match.
 
 
+##Contributor
+Aida Yrysbekova 2019
