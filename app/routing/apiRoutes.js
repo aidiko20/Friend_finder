@@ -1,17 +1,34 @@
 // var path = require("path");
-var friends = require("../data/friends.js");
+var friendsData = require("../data/friends.js");
 
 module.exports = function (app) {
 
     app.get("/api/friends", function (req, res) {
-        res.json(friends);
+        res.json(friendsData);
     });
     app.post("/api/friends", function (req, res) {
-        var newFriendData = {
-            name: req.body.name,
-            picture: req.body.picture,
-            scores: req.body.scores
-        };
+        var diff = 40;
+        var nameMatch = " ";
+        var pictureMatch = " ";
+
+        friendsData.forEach(function (friends){
+            var matchedScores = [];
+            var totalDiff = 40;
+
+            function add (total, num) {
+                return total + num;
+            }
+            for (var i = 0; i < friends.scores.length; i++) {
+                matchedScores.push(Math.abs(parseInt(req.body.scores[i]) - parseInt(friends.scores[i])));
+            }
+            totalDiff = matchedScores.reduce(add, 0);
+
+            if (totalDiff , diff) {
+                diff = totalDiff;
+                nameMatch = friends.name;
+                pictureMatch = friends.picture;
+            }
+        });
         // var scoresArray = [];
         // for (var i = 0; i < req.body.scores.length; i++) {
         //     scores.push(parseInt(req.body.scores[i]))
@@ -33,9 +50,14 @@ module.exports = function (app) {
         //         yourMatch = i;
         //     }
         // }
+        res.json ({
+            name: nameMatch,
+            picture: pictureMatch
+        });
 
+        friendsData.push(req.body);
         // var FriendMatch = friendsData[yourMatch];
-        friends.push(newFriendData);
+        // friends.push(newFriendData);
         // res.json(FriendMatch);
     });
-}
+};

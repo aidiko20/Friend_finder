@@ -10,14 +10,14 @@
 h1{
     font-style: italic;
     font-style: bold;
-    color: yellow;
+    color:rgb(165, 19, 19, 0.3)
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 p{
     font-style: italic;
-    color: yellow;
+    color: rgb(165, 19, 19);
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 .btn{
-    background-color: yellow;
+    background-color: rgb(165, 19, 19);
 }
