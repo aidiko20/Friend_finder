@@ -1,7 +1,8 @@
 # Friend_finder
  Live website:  https://calm-castle-11485.herokuapp.com/
 
-![alt text](images/Screenschotfinder.png "Title Text")
+![Alt text](images/Screenschotfinder.png)
+
 # How to use the app
 1. Simply click on button take servey
 2. Type your name and add your picture
