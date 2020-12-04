@@ -1,7 +1,6 @@
 # Friend_finder
  Live website:  https://calm-castle-11485.herokuapp.com/
-![Alt text](screenshot.png)
-![Alt text](screenshot.png)
+
 
 # How to use the app
 1. Simply click on button take servey
